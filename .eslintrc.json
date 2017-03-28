@@ -1,0 +1,78 @@
+{
+    "parser": "babel-eslint",
+    "globals": {
+        "$": true, //Client - in webpack.config.*.js
+        "ga": true,
+        "_": true,
+        "Store": true,
+        "AppConfig": true, //Client - in webpack.config.*.js, Server - app.js
+        "DBConfig": true, // app.js
+        "JobModel": true,
+        "Logger": true, // app.js
+        "NodeModel": true,
+        "NodeRelationModel": true,
+        "NodeCommentModel": true,
+        "NodeCommentStatsModel": true,
+        "NodeContentModel": true,
+        "NodeCounterModel": true,
+        "PermissionModel": true,
+        "PositionModel": true,
+        "ProfileValuesModel": true,
+        "ProjectModel": true,
+        "ProjectTeamModel": true,
+        "ProjectCategoryModel": true,
+        "TermNodeModel": true,
+        "TermDataModel": true,
+        "RoleModel": true,
+        "RolePermissionModel": true,
+        "UserModel": true,
+        "UserRoleModel": true
+    },
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
+    "ecmaFeatures": {
+        "experimentalObjectRestSpread": true,
+        "classes": true,
+        "jsx": true
+    },
+    "sourceType": "module",
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "no-console": 0,
+        "indent": [
+            "error",
+            2, {
+                "SwitchCase": 1
+            }
+        ],
+        "react/display-name": 0,
+        "react/wrap-multilines": 2,
+        "react/prop-types": 1,
+        "no-undef": 1,
+        "no-console": 1,
+        "no-unused-vars": 1,
+        "object-curly-spacing": [
+          "warn",
+          "always"
+        ],
+        "space-before-function-paren": ["error", "never"],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ]
+    }
+}
